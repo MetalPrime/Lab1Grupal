@@ -2,9 +2,17 @@ class StartScreen {
 
     constructor(){
         this.imgBackground = loadImage('./data/img/TITLE.jpg');
+        this.posX = 0;
+        this.posY = 0;
+        this.sizeX = 1024;
+        this.sizeY = 600;
     }
 
     paint(){
-        img 
+        image(this.imgBackground,this.posX,this.posY,this.sizeX,this.sizeY);
+    }
+
+    clicked(){
+        
     }
 }
