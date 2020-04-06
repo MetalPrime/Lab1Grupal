@@ -13,6 +13,9 @@ class StartScreen {
     }
 
     clicked(){
-        
+        if(dist(mouseX,mouseY,725,420)<80){
+            print("Todo en orden");
+            return true;
+        }
     }
 }
