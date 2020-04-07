@@ -1,6 +1,6 @@
-var startS,houseS;
-var screen;
-var logic;
+let startS,houseS;
+let screen;
+let logic;
 
 
 
@@ -14,9 +14,6 @@ function setup(){
 
 }
 
-function preload(){
-    Logic.preload();
-}
 
 function draw(){
     background(180);
