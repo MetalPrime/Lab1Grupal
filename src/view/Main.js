@@ -1,12 +1,21 @@
 var startS,houseS;
 var screen;
+var logic;
+
+
 
 function setup(){
     createCanvas(1024,600);
     startS = new StartScreen(this);
     houseS = new HouseOutScreen(this);
+
+    logic = new Logic();
     screen = 0;
 
+}
+
+function preload(){
+    Logic.preload();
 }
 
 function draw(){
