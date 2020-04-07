@@ -8,7 +8,7 @@ function setup(){
     createCanvas(1024,600);
     startS = new StartScreen(this);
     houseS = new HouseOutScreen(this);
-
+    comedorS = new ComedorScreen(this);
     logic = new Logic();
     screen = 0;
 
@@ -26,8 +26,11 @@ function draw(){
             houseS.paint();
             break;
         case 2:
+            comedorS.paint();
             break;
         case 3:
+            break;
+        case 4:
             break;
 
     }

@@ -3,7 +3,7 @@ class ComedorScreen extends Screen{
     constructor(imgBackground){
         super(imgBackground);
         this.imgBackground = imgBackground;
-        this.imgBackground = loadImage('./data/img/EXTERIOR.jpg');
+        this.imgBackground = loadImage('./data/img/MESAS.jpg');
 
     }
 
