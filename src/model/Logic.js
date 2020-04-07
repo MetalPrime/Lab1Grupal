@@ -1,0 +1,6 @@
+class Logic {
+
+    constructor(){
+
+    }
+}

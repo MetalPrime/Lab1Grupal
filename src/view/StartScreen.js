@@ -1,11 +1,11 @@
-class StartScreen {
+class StartScreen extends Screen {
 
-    constructor(){
+    
+    constructor(imgBackground){
+        super(imgBackground);
+        this.imgBackground = imgBackground;
         this.imgBackground = loadImage('./data/img/TITLE.jpg');
-        this.posX = 0;
-        this.posY = 0;
-        this.sizeX = 1024;
-        this.sizeY = 600;
+
     }
 
     paint(){

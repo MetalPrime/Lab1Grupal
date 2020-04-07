@@ -3,7 +3,7 @@ var screen;
 
 function setup(){
     createCanvas(1024,600);
-    startS = new StartScreen();
+    startS = new StartScreen(this);
     screen = 0;
 
 }
@@ -43,10 +43,13 @@ function mouseClicked(){
             };
             break;
         case 1:
+
             break;
         case 2:
             break;
         case 3:
+            break;
+        case 4:
             break;
 
     }
