@@ -1,4 +1,4 @@
-let startS,houseS;
+let startS,houseS,comedorS,dormitorioS;
 let screen;
 let logic;
 
@@ -9,6 +9,7 @@ function setup(){
     startS = new StartScreen(this);
     houseS = new HouseOutScreen(this);
     comedorS = new ComedorScreen(this);
+    dormitorioS = new DormitorioScreen(this);
     logic = new Logic();
     screen = 0;
 
@@ -29,6 +30,7 @@ function draw(){
             comedorS.paint();
             break;
         case 3:
+
             break;
         case 4:
             break;
