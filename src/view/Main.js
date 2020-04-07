@@ -1,9 +1,10 @@
-var startS;
+var startS,houseS;
 var screen;
 
 function setup(){
     createCanvas(1024,600);
     startS = new StartScreen(this);
+    houseS = new HouseOutScreen(this);
     screen = 0;
 
 }
@@ -14,9 +15,9 @@ function draw(){
     switch (screen){
         case 0:
             startS.paint();
-
             break;
         case 1:
+            houseS.paint();
             break;
         case 2:
             break;
