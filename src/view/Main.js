@@ -1,4 +1,4 @@
-let startS,houseS,comedorS,dormitorioS;
+let startS,houseS,comedorS,dormitorioS,endS;
 let screen;
 let logic;
 let txtBase;
@@ -14,6 +14,7 @@ function setup(){
     houseS = new HouseOutScreen(this);
     comedorS = new ComedorScreen(this);
     dormitorioS = new DormitorioScreen(this);
+    endS = new EndScreen(this);
     logic = new Logic();
     screen = 2;
     console.log(txtBase[0]);
@@ -36,9 +37,10 @@ function draw(){
             comedorS.paint();
             break;
         case 3:
-
+            dormitorioS.paint();
             break;
         case 4:
+            endS.paint();
             break;
 
     }
