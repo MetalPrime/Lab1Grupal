@@ -13,7 +13,7 @@ class HouseOutScreen extends Screen{
 
        if(dist(mouseX,mouseY,540,130)<300){
         image(this.hHighlight,525,130,400,220);
-        console.log("funciona algo")
+        console.log("funciona algo");
         }
     }
 
