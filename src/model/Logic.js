@@ -1,15 +1,22 @@
 class Logic {
 
-    constructor(){
-        
-        var txtBase = loadStrings('./data/txt/historiaRicitos.txt');
-       // this.arrayTxt = split(this.txtBase, '<br/>')
-        createP(txtBase);
-        console.log(txtBase);
+    static preload(){
+        txtBase = loadStrings('../data/txt/historiaRicitos.txt');
     }
 
-    static paint(){
+    constructor(){
+        // this.arrayTxt = split(this.txtBase, '<br/>')
+        this.text();
+        
+     }
 
+    static paint(){
+        //console.log(txtBase[2]);
+        
+    }
+
+    text(){
+        createP(txtBase);
     }
 
 

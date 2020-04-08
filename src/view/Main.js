@@ -1,8 +1,12 @@
 let startS,houseS,comedorS,dormitorioS;
 let screen;
 let logic;
+let txtBase;
 
-
+function preload() {
+    txtBase = loadStrings('../data/txt/historiaRicitos.txt');
+    Logic.preload();
+}
 
 function setup(){
     createCanvas(1024,600);
@@ -11,9 +15,11 @@ function setup(){
     comedorS = new ComedorScreen(this);
     dormitorioS = new DormitorioScreen(this);
     logic = new Logic();
-    screen = 0;
-
+    screen = 2;
+    console.log(txtBase[0]);
 }
+
+
 
 
 function draw(){
@@ -41,7 +47,7 @@ function draw(){
     textSize(32);
     text(mouseX,mouseX,mouseY);
     text(mouseY,mouseX+60,mouseY);
-
+    Logic.paint();
 
 }
 
