@@ -16,7 +16,7 @@ function setup(){
     dormitorioS = new DormitorioScreen(this);
     endS = new EndScreen(this);
     logic = new Logic();
-    screen = 2;
+    screen = 3;
     console.log(txtBase[0]);
 }
 
@@ -49,7 +49,6 @@ function draw(){
     textSize(32);
     text(mouseX,mouseX,mouseY);
     text(mouseY,mouseX+60,mouseY);
-    Logic.paint();
 
 }
 
@@ -66,8 +65,10 @@ function mouseClicked(){
 
             break;
         case 2:
+            comedorS.clicked();
             break;
         case 3:
+            dormitorioS.clicked();
             break;
         case 4:
             break;

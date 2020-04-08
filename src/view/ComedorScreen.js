@@ -6,6 +6,8 @@ class ComedorScreen extends Screen{
         this.imgBackground = loadImage('./data/img/MESAS.jpg');
         this.imgRicitosLook = loadImage('./data/img/ricitosEsquina.png');
         this.ricitosLooking = true;
+        this.logic = new Logic();
+
     }
 
     paint(){
@@ -14,9 +16,13 @@ class ComedorScreen extends Screen{
         if(this.ricitosLooking == true){
             image(this.imgRicitosLook,200,247,200,200);
         }
+    
+            this.logic.getSoaps();
+         
+       
     }
 
     clicked(){
-
+     
     }
 }
