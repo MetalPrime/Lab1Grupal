@@ -5,11 +5,13 @@ class StartScreen extends Screen {
         super(imgBackground);
         this.imgBackground = imgBackground;
         this.imgBackground = loadImage('./data/img/TITLE.jpg');
-
+        
     }
 
     paint(){
         image(this.imgBackground,this.posX,this.posY,this.sizeX,this.sizeY);
+
+
     }
 
     clicked(){
