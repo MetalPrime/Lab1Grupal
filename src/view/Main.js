@@ -22,7 +22,6 @@ function setup(){
 
 
 
-
 function draw(){
     background(180);
     
@@ -81,6 +80,7 @@ function mouseClicked(){
             }
             break;
         case 4:
+            endS.clicked();
             break;
 
     }

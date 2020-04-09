@@ -12,6 +12,8 @@ class EndScreen extends Screen{
     }
 
     clicked(){
-
+        if(dist(mouseX,mouseY,725,420)<75){
+            Logic.txt();
+        }
     }
 }
