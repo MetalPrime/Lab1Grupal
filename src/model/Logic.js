@@ -8,8 +8,8 @@ class Logic {
     }
 
     constructor(){
-        // this.arrayTxt = split(this.txtBase, '<br/>');
-        
+    
+        console.log(txtBase);
         for(let i=0;i<3;i++){
            soaps.push(new Sopa((80*i)+450,(15*i)+200,(i*10)+50,50));
         }
@@ -26,10 +26,17 @@ class Logic {
         
      }
 
-    static paint(){
-        //console.log(txtBase[2]);
-     /* 
-         */
+    static txt(){
+        txtBase[3].replace('(casa)','CASA');
+        txtBase[6].replace('(sentarse)','SENTARSE');
+        txtBase[6].replace('pequeño','PEQUEÑO');
+        txtBase[6].replace('mediano','MEDIANO');
+        txtBase[6].replace('grande','GRANDE');
+        txtBase[11].replace('cama','CAMA');
+        txtBase[11].replace('pequeña','PEQUEÑA');
+        txtBase[11].replace('mediana','MEDIANA');
+        txtBase[11].replace('grande','GRANDE');
+        saveStrings(txtBase,'newTXT.txt');
     }
 
 

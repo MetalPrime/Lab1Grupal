@@ -16,7 +16,7 @@ function setup(){
     dormitorioS = new DormitorioScreen(this);
     endS = new EndScreen(this);
     logic = new Logic();
-    screen = 3;
+    screen = 0;
     console.log(txtBase[0]);
 }
 
