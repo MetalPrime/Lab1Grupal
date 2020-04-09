@@ -61,7 +61,7 @@ class Logic {
     getClicksSopas(){
         for(let i=0;i<soaps.length;i++){
             soaps[i].clicked();
-            console.log("funciona");
+           
          }
 
     }
@@ -73,6 +73,14 @@ class Logic {
             }
          }
       
+    }
+
+    showOsitos(){
+        for(let i=0;i<camas.length;i++){
+            if(camas[0].camasF()  && camas[1].camasF() && camas[2].camasF()){
+                return true;
+            }
+         }  
     }
 
 }

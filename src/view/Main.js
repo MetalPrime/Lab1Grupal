@@ -16,7 +16,7 @@ function setup(){
     dormitorioS = new DormitorioScreen(this);
     endS = new EndScreen(this);
     logic = new Logic();
-    screen = 2;
+    screen = 3;
     console.log(txtBase[0]);
 }
 
@@ -76,6 +76,9 @@ function mouseClicked(){
             break;
         case 3:
             dormitorioS.clicked();
+            if(dormitorioS.passScreen()){
+                screen=4;
+            }
             break;
         case 4:
             break;

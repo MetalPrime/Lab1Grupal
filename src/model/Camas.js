@@ -48,6 +48,14 @@ class Camas{
 
 
     }
+
+    camasF(){
+        if(this.cama==2){
+           // console.log("putisimo");
+            return true;
+
+        }
+    }
     
     /**
      * @param {number} cama

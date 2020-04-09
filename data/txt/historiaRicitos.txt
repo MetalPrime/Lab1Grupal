@@ -6,3 +6,8 @@ Al entrar en la casa ricitos vio comida servida en la
 mesa y decidio (sentarse) "este seria decision" y tomar del plato (pequeño/mediano/grande) "el que decida el usuario" y al
 acabar de comse se sintion cansada y quiso buscar un
 lugar donde dormir.
+
+Al entrar en el cuarto ricitos de oro decide
+dormir en la cama (pequeña/mediana/grande) "el que decida el usuario".
+
+Al despertar ricitos de oro vio una familia de 3 osos mirandola, ella se asusto y abandono la casa despavorida.
