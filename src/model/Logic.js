@@ -9,7 +9,7 @@ class Logic {
 
     constructor(){
     
-        console.log(txtBase);
+        console.log(txtBase[2]);
         for(let i=0;i<3;i++){
            soaps.push(new Sopa((80*i)+450,(15*i)+200,(i*10)+50,50));
         }
@@ -27,15 +27,27 @@ class Logic {
      }
 
     static txt(){
-        txtBase[3].replace('(casa)','CASA');
-        txtBase[6].replace('(sentarse)','SENTARSE');
-        txtBase[6].replace('pequeño','PEQUEÑO');
-        txtBase[6].replace('mediano','MEDIANO');
-        txtBase[6].replace('grande','GRANDE');
-        txtBase[11].replace('cama','CAMA');
-        txtBase[11].replace('pequeña','PEQUEÑA');
-        txtBase[11].replace('mediana','MEDIANA');
-        txtBase[11].replace('grande','GRANDE');
+        var casa = "CASA";
+        var sentarse = "SENTARSE";
+        var pequeño = "PEQUEÑO";
+        var mediano = "MEDIANO";
+        var grande = "GRANDE";
+        var cama = "CAMA";
+        casa.toUpperCase();
+        sentarse.toUpperCase();
+        pequeño.toUpperCase();
+        mediano.toUpperCase();
+        grande.toUpperCase();
+        cama.toUpperCase();
+        txtBase[2].replace(txtBase[2].search("casa"),casa);
+        txtBase[5].replace(txtBase[5]("sentarse"),sentarse);
+        txtBase[5].replace('pequeño',pequeño);
+        txtBase[5].replace('mediano',mediano);
+        txtBase[5].replace('grande',grande);
+        txtBase[10].replace('cama',cama);
+        txtBase[10].replace('pequeña',pequeño);
+        txtBase[10].replace('mediana',mediano);
+        txtBase[10].replace('grande',grande);
         saveStrings(txtBase,'newTXT.txt');
     }
 
