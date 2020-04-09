@@ -5,6 +5,7 @@ class HouseOutScreen extends Screen{
         this.imgBackground = imgBackground;
         this.imgBackground = loadImage('./data/img/EXTERIOR.jpg');
         this.hHighlight = loadImage('./data/img/casaHighlight.png');
+        this.paintCasa = false;
     }
 
     paint(){
@@ -14,10 +15,14 @@ class HouseOutScreen extends Screen{
        if(dist(mouseX,mouseY,540,130)<300){
         image(this.hHighlight,525,130,400,220);
         console.log("funciona algo");
+            this.paintCasa = true;
         }
     }
 
     clicked(){
-
+        if(dist(mouseX,mouseY,540,130)<300){
+            print("ara ara");
+            return true;
+        }
     }
 }

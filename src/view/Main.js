@@ -16,7 +16,7 @@ function setup(){
     dormitorioS = new DormitorioScreen(this);
     endS = new EndScreen(this);
     logic = new Logic();
-    screen = 3;
+    screen = 2;
     console.log(txtBase[0]);
 }
 
@@ -62,10 +62,17 @@ function mouseClicked(){
             };
             break;
         case 1:
-
+            if(houseS.clicked()){
+                print("tambien funciona");
+                screen=2;
+            };
             break;
         case 2:
             comedorS.clicked();
+            if(comedorS.passScreen()){
+                print("puta alejandra");
+                screen=3;
+            };
             break;
         case 3:
             dormitorioS.clicked();

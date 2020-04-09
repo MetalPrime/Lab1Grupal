@@ -1,9 +1,10 @@
 class Camas{
 
-    constructor(image,imgLlena,imgDesordenada,posX,posY,sizeX,sizeY){
+    constructor(image,imgLlena,imgDesordenada,imgHighlight,posX,posY,sizeX,sizeY){
         this.image = image;
         this.imgLlena = imgLlena;
         this.imgDesordenada = imgDesordenada;
+        this.imgHighlight = imgHighlight;
         this.posX = posX;
         this.posY = posY;
         this.sizeX = sizeX;
@@ -15,6 +16,10 @@ class Camas{
         switch(this.cama){
             case 0:
                 image(this.image,this.posX,this.posY,this.sizeX,this.sizeY);
+                if(dist(mouseX,mouseY,this.posX,this.posY)<this.sizeX-70 ){
+                 image(this.imgHighlight,this.posX,this.posY,this.sizeX,this.sizeY);
+                    console.log("joder no se");
+                }
                 break;
             case 1:
                 image(this.imgLlena,this.posX,this.posY,this.sizeX,this.sizeY);
@@ -30,12 +35,15 @@ class Camas{
         if(dist(mouseX,mouseY,this.posX,this.posY)<(this.sizeX-70) && this.cama==1){
             this.cama = 2;
             console.log("jajaajajajja");
-        } else
-        if(dist(mouseX,mouseY,this.posX,this.posY)<(50)){
+        } else if(dist(mouseX,mouseY,this.posX,this.posY)<(50)){
             this.cama = 1;
             console.log("jcjcoñooooooooooo");
         }
 
+        if(dist(mouseX,mouseY,this.posX,this.posY)<this.sizeX-70 ){
+            image(this.imgHighlight,this.posX,this.posY,this.sizeX,this.sizeY);
+            console.log("joder no se");
+        }
 
 
 
@@ -46,10 +54,6 @@ class Camas{
      */
     set changesCamas(cama){
         this.cama = cama;
-    }
-
-    get cama() {
-        return this.cama;
     }
         
        // console.log("menajdjd");
